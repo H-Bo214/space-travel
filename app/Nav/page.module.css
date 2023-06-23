@@ -1,0 +1,24 @@
+.nav::before {
+  content:url('../../public/assets/images/shared/Rectangle.svg'); 
+  position: absolute;
+  left: -450px;
+}
+
+.nav {
+  background: rgba(255,255,255, 0.04);
+  backdrop-filter: blur(5px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 830px;
+  min-width: 700px;
+  position: relative;
+  padding-left: 123px; 
+  padding-right: 165px;
+}
+
+.ul {
+  display: flex;
+  gap: 3.25rem;
+  list-style: none;
+  letter-spacing: 0.16875rem;
+} 
