@@ -6,8 +6,8 @@ import { bellefair, barlowCondensed } from "./font.js";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section className={styles.leftContentContainer}>
-        <section className={styles.headingContainer}>
+      <section>
+        <section>
           <h1 className={`${barlowCondensed.className} ${styles.heading}`}>
             SO, YOU WANT TO TRAVEL TO
             <span className={`${styles.spaceText} ${bellefair.className}`}>
@@ -24,7 +24,7 @@ export default function Home() {
           </p>
         </article>
       </section>
-      <section className={styles.rightContentContainer}>
+      <section className={styles.exploreContainer}>
         <Link className={styles.explore} href="/destinations/moon">
           EXPLORE
         </Link>

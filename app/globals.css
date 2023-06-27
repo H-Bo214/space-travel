@@ -18,9 +18,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* min-width: 700px; */
-  /* max-width: 2100px;   */
-  /* height: 100vh;
-  height: 100svh; */
+  height: calc(100vh - 1rem);
+  max-width: 2100px;
 }
 
