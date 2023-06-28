@@ -7,6 +7,7 @@
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  height: 30rem;
 }
 
 .heading {
@@ -29,22 +30,26 @@
   width: 27.75rem;
 }
 
-.exploreContainer {
-  min-width: 17.125rem;
-  min-height: 17.125rem;
+.exploreContainer{
+  border-radius: 50%;
+  border: 4rem solid transparent;
+}
+
+.exploreContainer:hover {
+  border: 4rem solid #31323b;
+  transition: .8s ease-in-out;
+}
+
+.explore {
+  width: 17.125rem;
+  height: 17.125rem;
   background-color: #FFF;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10.19rem;
-}
-
-
-.explore {
   color: #0B0D17;
   font-size: 2rem;
   letter-spacing: 0.125rem;
   text-decoration: none;
 }
-

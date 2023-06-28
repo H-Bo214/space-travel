@@ -25,7 +25,10 @@ export default function Home() {
         </article>
       </section>
       <section className={styles.exploreContainer}>
-        <Link className={styles.explore} href="/destinations/moon">
+        <Link
+          className={`${styles.explore} ${bellefair.className}`}
+          href="/destinations/moon"
+        >
           EXPLORE
         </Link>
       </section>
