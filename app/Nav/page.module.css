@@ -1,5 +1,5 @@
 .nav::before {
-  content:url('../../public/assets/images/shared/Rectangle.svg'); 
+  content:url('../../public/images/shared/rectangle.svg'); 
   position: absolute;
   left: -450px;
 }

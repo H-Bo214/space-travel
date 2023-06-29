@@ -1,12 +1,13 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { bellefair, barlowCondensed } from "./font.js";
+import Image from "next/image";
+import circle from "../public/images/home/explore-circle.png";
+import { bellefair, barlowCondensed, barlow } from "./font.js";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section>
+      <section className={styles.leftContentContainer}>
         <section>
           <h1 className={`${barlowCondensed.className} ${styles.heading}`}>
             SO, YOU WANT TO TRAVEL TO
@@ -15,7 +16,7 @@ export default function Home() {
             </span>
           </h1>
         </section>
-        <article className={styles.article}>
+        <article className={`${styles.article} ${barlow.className}`}>
           <p>
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
@@ -25,11 +26,13 @@ export default function Home() {
         </article>
       </section>
       <section className={styles.exploreContainer}>
-        <Link
-          className={`${styles.explore} ${bellefair.className}`}
-          href="/destinations/moon"
-        >
-          EXPLORE
+        <Link href="/destinations/moon">
+          <Image
+            src={circle}
+            width={274}
+            height={274}
+            alt="White circle against a background of Earth with the word explore"
+          />
         </Link>
       </section>
     </main>

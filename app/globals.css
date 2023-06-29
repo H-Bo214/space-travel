@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: url('../public/assets/images/home/background-home-desktop.jpg') no-repeat center center fixed; 
+  background: url('../public/images/home/background-home-desktop.jpg') no-repeat center center fixed; 
   background-clip: border-box;
   background-origin: padding-box;
   background-size: cover;
