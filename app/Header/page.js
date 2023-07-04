@@ -8,8 +8,8 @@ export default function Header() {
   const navStyle = {
     backGround: "rgba(255, 255, 255, 0.04)",
     backdropFilter: "blur(5px)",
-    paddingTop: "40px",
-    paddingBottom: "40px",
+    // paddingTop: "40px",
+    // paddingBottom: "40px",
     maxWidth: "830px",
     minWidth: "700px",
     position: "relative",

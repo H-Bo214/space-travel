@@ -29,11 +29,18 @@ body {
 /* li style a is shared in within header and destinations/layout.js */
 .li {
   color: #FFF;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   text-decoration: none;
+  border-bottom: 0.1875rem solid transparent;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+.li:hover {
+  border-bottom: 0.1875rem solid #FFF;
+  transition: .8s ease-in-out;
+}
 .li:visited {
   color: #FFF;
 }
@@ -45,11 +52,11 @@ body {
   display: flex;
 }
 
-.destination-heading {
+/* .destination-heading {
   border: 2px solid blue;
   color: #FFF;
   font-size: 1.75rem;
   font-weight: 400;
   letter-spacing: 0.29531rem;
-}
+} */
 /* ************************* */
