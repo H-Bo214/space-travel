@@ -1,0 +1,37 @@
+.bgImageWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:calc(100vh - 1rem);
+  background: url('../../public/images/destination/background-destination-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+
+.destinationHeading {
+  border: 2px solid blue;
+  color: #FFF;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.29531rem;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+
+.num {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-right: 1.5rem;
+  margin-left: 12rem;
+}
+
+.NavContainer {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid red;
+  margin-right: 20rem;
+}

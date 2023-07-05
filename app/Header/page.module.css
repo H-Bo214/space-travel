@@ -11,14 +11,3 @@
   display: inline-block;
   margin-right: 0.6875rem;;
 }
-
-.li {
-  color: #FFF;
-  display: inline-flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.li:visited {
-  color: #FFF;
-}

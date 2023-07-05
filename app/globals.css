@@ -9,7 +9,11 @@ html {
 }
 
 body {
-  background: url('../public/assets/images/home/background-home-desktop.jpg') no-repeat center center fixed; 
+  overscroll-behavior: none;
+  max-width: 2100px;
+}
+/* body {
+  background: url('../public/images/home/background-home-desktop.jpg') no-repeat center center fixed; 
   background-clip: border-box;
   background-origin: padding-box;
   background-size: cover;
@@ -18,9 +22,41 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* min-width: 700px; */
-  /* max-width: 2100px;   */
-  /* height: 100vh;
-  height: 100svh; */
+  height: calc(100vh - 1rem);
+  max-width: 2100px;
+} */
+
+/* li style a is shared in within header and destinations/layout.js */
+.li {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 0.1875rem solid transparent;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+.li:hover {
+  border-bottom: 0.1875rem solid #FFF;
+  transition: .8s ease-in-out;
+}
+.li:visited {
+  color: #FFF;
+}
+/* ************************** */
+
+/* used in destination/layout.js */
+.heading-nav-container {
+  border: 2px solid lime;
+  display: flex;
+}
+
+/* .destination-heading {
+  border: 2px solid blue;
+  color: #FFF;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.29531rem;
+} */
+/* ************************* */
