@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Planet({ name, description, image, distance, travel }) {
+export default function Destination({ name, description, image, distance, travel }) {
   return (
     <section>
       <section>
