@@ -2,7 +2,6 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import circle from "../public/images/home/explore-circle.png";
-import homePageBg from "../public/images/home/background-home-desktop.jpg";
 import { bellefair, barlowCondensed, barlow } from "./font.js";
 
 export default function Home() {
@@ -13,17 +12,14 @@ export default function Home() {
           <section>
             <h1 className={`${barlowCondensed.className} ${styles.heading}`}>
               SO, YOU WANT TO TRAVEL TO
-              <span className={`${styles.spaceText} ${bellefair.className}`}>
-                SPACE
-              </span>
+              <span className={`${styles.spaceText} ${bellefair.className}`}>SPACE</span>
             </h1>
           </section>
           <article className={`${styles.article} ${barlow.className}`}>
             <p>
-              Let’s face it; if you want to go to space, you might as well
-              genuinely go to outer space and not hover kind of on the edge of
-              it. Well sit back, and relax because we’ll give you a truly out of
-              this world experience!
+              Let’s face it; if you want to go to space, you might as well genuinely go to outer
+              space and not hover kind of on the edge of it. Well sit back, and relax because we’ll
+              give you a truly out of this world experience!
             </p>
           </article>
         </section>
