@@ -1,9 +1,11 @@
+import { NextResponse } from "next/server";
+
 export async function GET(request) {
   // route http://localhost:3000/api/destinations
-
   const destinations = [
     {
-      name: "Moon",
+      id: "1",
+      name: "moon",
       images: {
         png: "/images/destination/image-moon.png",
         webp: "/images/destination/image-moon.webp",
@@ -14,7 +16,8 @@ export async function GET(request) {
       travel: "3 days",
     },
     {
-      name: "Mars",
+      id: "2",
+      name: "mars",
       images: {
         png: "./images/destination/image-mars.png",
         webp: "./images/destination/image-mars.webp",
@@ -25,7 +28,8 @@ export async function GET(request) {
       travel: "9 months",
     },
     {
-      name: "Europa",
+      id: "3",
+      name: "europa",
       images: {
         png: "./images/destination/image-europa.png",
         webp: "./images/destination/image-europa.webp",
@@ -36,7 +40,8 @@ export async function GET(request) {
       travel: "3 years",
     },
     {
-      name: "Titan",
+      id: "4",
+      name: "titan",
       images: {
         png: "./images/destination/image-titan.png",
         webp: "./images/destination/image-titan.webp",
@@ -48,5 +53,5 @@ export async function GET(request) {
     },
   ];
 
-  return new Response(JSON.stringify(destinations));
+  return NextResponse.json(destinations);
 }

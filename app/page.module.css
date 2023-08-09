@@ -1,31 +1,27 @@
-.bgImageWrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:calc(100vh - 1rem);
-  background: url('../public/images/home/background-home-desktop.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  z-index: -1;
-}
-
-
 .main {
   display: flex;
-  gap: 20rem;
   justify-content: center;
-  margin-top: calc(100vh - 36rem);
-  min-width: 90rem;
-  z-index: 10;
+  margin: 0 auto;
+  background: url('../public/images/home/background-home-desktop.jpg') lightgray 0px 0px / 100% 100% no-repeat;
+  /* border: 2px solid blue; */
+  height: 100dvh;
+  width: 100%;
+}
+
+.mainContentContainer {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid darkkhaki; */
+  gap: 20rem;
+  margin-top: calc(100dvh - 73dvh);
 }
 
 .leftContentContainer {
   height: 24rem;
+  /* border: 2px solid mediumspringgreen; */
 }
 
-.heading {
+.heading { 
   color: #D0D6F9;
   font-size: 1.75rem;
   font-weight: 400;
@@ -57,9 +53,11 @@
   height: 24rem;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid mediumspringgreen; */
 }
 
 .exploreContainer:hover {
   border: 5rem solid #31323b;
+  cursor: pointer;
   transition: .8s ease-in-out;
 }
