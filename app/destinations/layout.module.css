@@ -1,4 +1,4 @@
-.bgImageWrapper {
+/* .bgImageWrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,17 +9,20 @@
   background-size: cover;
   margin: 0 auto;
   z-index: -1;
+} */
+.main {
+    min-width: 90rem;
+    background: url('../../public/images/destination/background-destination-desktop.jpg') no-repeat;
+  background-size: cover;
+  height: 75vh;
 }
 
-
 .destinationHeading {
-  border: 2px solid blue;
   color: #FFF;
   font-size: 1.75rem;
   font-weight: 400;
   letter-spacing: 0.29531rem;
-  margin-top: 12rem;
-  margin-bottom: 4rem;
+  padding-top: 12rem;
 }
 
 .num {
@@ -31,7 +34,11 @@
 
 .NavContainer {
   display: flex;
-  justify-content: flex-end;
-  border: 2px solid red;
-  margin-right: 20rem;
+  padding-left: 2.75rem;
+  margin-left: 50.78rem;
+  width: 30.78rem;
+}
+
+.navList {
+  color: #D0D6F9;
 }

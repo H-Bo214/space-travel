@@ -6,8 +6,8 @@ import { bellefair, barlowCondensed, barlow } from "./font.js";
 
 export default function Home() {
   return (
-    <div className={styles.bgImageWrapper}>
-      <main className={styles.main}>
+    <main className={styles.main}>
+      <section className={styles.mainContentContainer}>
         <section className={styles.leftContentContainer}>
           <section>
             <h1 className={`${barlowCondensed.className} ${styles.heading}`}>
@@ -33,7 +33,7 @@ export default function Home() {
             />
           </Link>
         </section>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

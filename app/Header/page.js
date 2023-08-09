@@ -7,10 +7,7 @@ import styles from "./page.module.css";
 export default function Header() {
   const navStyle = {
     backGround: "rgba(255, 255, 255, 0.04)",
-    backdropFilter: "blur(5px)",
-    maxWidth: "830px",
-    minWidth: "700px",
-    position: "relative",
+    backdropFilter: "blur(40.774227142333984px)",
     paddingLeft: "123px",
     paddingRight: "165px",
   };
@@ -22,7 +19,6 @@ export default function Header() {
         width={48}
         height={48}
         alt="space travel company logo, a white circle with a black four pointed star"
-        className={styles.logo}
       />
       <Nav style={navStyle}>
         <li>
@@ -32,7 +28,7 @@ export default function Header() {
         </li>
         <li>
           <Link href="/destinations/moon" className="li">
-            <span className={styles.num}>01</span>DESTINATIONS
+            <span className={styles.num}>01</span>DESTINATION
           </Link>
         </li>
         <li>

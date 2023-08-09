@@ -9,7 +9,6 @@ export default async function Moon() {
   const { png } = images;
   return (
     <>
-      <h1>Moon route</h1>
       <Destination
         name={name}
         image={png}

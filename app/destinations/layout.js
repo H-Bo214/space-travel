@@ -8,7 +8,8 @@ export default async function DestinationLayout({ children }) {
   // A feature of Next.js is auto caching of previously fetched data. If the data is available from the cache a new API is not executed.
   const destinations = await getDestinations();
   return (
-    <div className={styles.bgImageWrapper}>
+    // <div className={styles.bgImageWrapper}>
+    <main className={styles.main}>
       <h1 className={`${barlowCondensed.className} ${styles.destinationHeading}`}>
         <span className={styles.num}>01</span> PICK YOUR DESTINATION
       </h1>
@@ -16,14 +17,20 @@ export default async function DestinationLayout({ children }) {
         <Nav>
           {destinations.map((destination) => {
             return (
-              <Link href={`/destinations/${destination.name}`} key={destination.id} className="li">
+              <Link
+                href={`/destinations/${destination.name}`}
+                key={destination.id}
+                className={`li ${styles.navList}`}
+              >
                 {destination.name}
               </Link>
             );
           })}
         </Nav>
       </section>
-      <main>{children}</main>
-    </div>
+      <section>{children}</section>
+    </main>
+
+    // </div>
   );
 }
