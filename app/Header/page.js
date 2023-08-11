@@ -12,6 +12,13 @@ export default function Header() {
     paddingRight: "165px",
   };
 
+  const navItems = [
+    { id: "00", href: "/", name: "home" },
+    { id: "01", href: "/destinations/moon", name: "destination" },
+    { id: "02", href: "/crew/commander", name: "crew" },
+    { id: "03", href: "/technology/vehicle", name: "technology" },
+  ];
+
   return (
     <header className={styles.header}>
       <Image
@@ -21,26 +28,14 @@ export default function Header() {
         alt="space travel company logo, a white circle with a black four pointed star"
       />
       <Nav style={navStyle}>
-        <li>
-          <Link href="/" className="li">
-            <span className={styles.num}>00</span>HOME
-          </Link>
-        </li>
-        <li>
-          <Link href="/destinations/moon" className="li">
-            <span className={styles.num}>01</span>DESTINATION
-          </Link>
-        </li>
-        <li>
-          <Link href="/crew/commander" className="li">
-            <span className={styles.num}>02</span>CREW
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="li">
-            <span className={styles.num}>03</span>TECHNOLOGY
-          </Link>
-        </li>
+        {navItems.map((item) => (
+          <li key={item.id}>
+            <Link href={item.href} className="li">
+              <span className={styles.num}>{item.id}</span>
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </Nav>
     </header>
   );
