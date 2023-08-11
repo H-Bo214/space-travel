@@ -21,12 +21,14 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Image
-        src={logo}
-        width={48}
-        height={48}
-        alt="space travel company logo, a white circle with a black four pointed star"
-      />
+      <Link href="/" className={styles.anchor}>
+        <Image
+          src={logo}
+          width={48}
+          height={48}
+          alt="space travel company logo, a white circle with a black four pointed star"
+        />
+      </Link>
       <Nav style={navStyle}>
         {navItems.map((item) => (
           <li key={item.id}>
