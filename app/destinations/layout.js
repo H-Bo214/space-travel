@@ -17,13 +17,11 @@ export default async function DestinationLayout({ children }) {
         <Nav>
           {destinations.map((destination) => {
             return (
-              <Link
-                href={`/destinations/${destination.name}`}
-                key={destination.id}
-                className={`li ${styles.navList}`}
-              >
-                {destination.name}
-              </Link>
+              <li key={destination.id}>
+                <Link href={`/destinations/${destination.name}`} className={`li ${styles.navList}`}>
+                  {destination.name}
+                </Link>
+              </li>
             );
           })}
         </Nav>
