@@ -1,10 +1,10 @@
-import Destination from '../../Destination/page.js';
-import getDestinations from '../../apiCalls.js';
+import getDestinations from '@/app/apiCalls';
+import Destination from '@/app/Destination/page';
 
-export default async function Moon() {
+export default async function Europa() {
   const destinations = await getDestinations();
   const { name, description, distance, travel, images } = destinations.find(
-    (destination) => destination.name === 'moon'
+    (destination) => destination.name === 'europa'
   );
   return (
     <>
