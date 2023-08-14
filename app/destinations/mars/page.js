@@ -5,6 +5,7 @@ export default async function Mars() {
   const { name, description, distance, travel, images } = destinations.find(
     (destination) => destination.name === 'mars'
   );
+
   return (
     <>
       <Destination

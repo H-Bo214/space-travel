@@ -12,6 +12,8 @@ export default function Destination({ name, description, image, distance, travel
           width={445}
           height={445}
           alt={name}
+          placeholder='blur'
+          blurDataURL={image}
         />
       </section>
       <article className={styles.destinationContainer}>

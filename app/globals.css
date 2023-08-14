@@ -6,40 +6,13 @@
 
 html { 
   background-color: #0B0D17;
-  /* height: 100%; */
 }
 
 body {
-  /* overscroll-behavior: none; */
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 131.25rem;
-  /* border: 2px solid red; */
   position: relative;
   height: 100dvh;
-}
-
-/* li style a is shared in within header and destinations/layout.js */
-
-.li {
-  color: #FFF;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  border-bottom: 0.1875rem solid transparent;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-transform: uppercase;
-}
-
-.li:hover {
-  border-bottom: 0.1875rem solid #FFF;
-  transition: .8s ease-in-out;
-}
-
-/* used in destination/layout.js */
-.heading-nav-container {
-  border: 2px solid lime;
-  display: flex;
 }
