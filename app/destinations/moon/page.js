@@ -1,5 +1,5 @@
 import Destination from '../../Destination/page.js';
-import getDestinations from '../../apiCalls.js';
+import { getDestinations } from '../../apiCalls.js';
 
 export default async function Moon() {
   const destinations = await getDestinations();

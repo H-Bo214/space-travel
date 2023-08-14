@@ -1,4 +1,4 @@
-import getDestinations from '@/app/apiCalls';
+import { getDestinations } from '../../apiCalls.js';
 import Destination from '@/app/Destination/page';
 
 export default async function Europa() {

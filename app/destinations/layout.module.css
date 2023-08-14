@@ -1,6 +1,6 @@
 .main {
-    min-width: 90rem;
-    background: url('../../public/images/destination/background-destination-desktop.jpg') no-repeat;
+  min-width: 90rem;
+  background: url('../../public/images/destination/background-destination-desktop.jpg') no-repeat;
   background-size: cover;
   height: 75vh;
 }
