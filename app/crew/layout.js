@@ -1,45 +1,62 @@
 'use client';
-import Nav from '../Nav/page';
 import Link from 'next/link';
 import styles from './layout.module.css';
 import { barlowCondensed } from '../font';
-// import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export default function CrewLayout({ children }) {
-  // const navItems = [
-  //   { id: '00', href: '/destinations/moon', name: 'moon' },
-  //   { id: '01', href: '/destinations/mars', name: 'mars' },
-  //   { id: '02', href: '/destinations/europa', name: 'europa' },
-  //   { id: '03', href: '/destinations/titan', name: 'titan' },
-  // ];
-  // const pathname = usePathname();
+  const navItems = [
+    { id: '00', href: '/crew/commander', name: 'commander', cx: '7.5' },
+    {
+      id: '01',
+      href: '/crew/mission-specialist',
+      name: 'mission-specialist',
+      cx: '46.5',
+    },
+    { id: '02', href: '/crew/pilot', name: 'pilot', cx: '85.5' },
+    {
+      id: '03',
+      href: '/crew/flight-engineer',
+      name: 'flight-engineer',
+      cx: '124.5',
+    },
+  ];
+  const pathname = usePathname();
+  const opacity = '0.174363';
+
   return (
     <main className={styles.main}>
-      <h1 className={`${barlowCondensed.className} ${styles.destinationHeading}`}>
-        <span className={styles.num}>02</span> Meet Your Crew
-      </h1>
-      {/* <section className={styles.NavContainer}>
-        <Nav>
-          {navItems.map((item) => {
-            const isActive = pathname === `/destinations/${item.name}`;
-            return (
-              <li key={item.id}>
-                <Link
-                  href={`/destinations/${item.name}`}
-                  className={
-                    isActive
-                      ? `${styles.navList} ${styles.active}`
-                      : `${styles.navList}`
-                  }
-                >
-                  {item.name}
+      <section className={styles.contentNavContainer}>
+        <h1 className={`${barlowCondensed.className} ${styles.crewHeading}`}>
+          <span className={styles.num}>02</span> Meet Your Crew
+        </h1>
+        <section className={styles.innerContent}>{children}</section>
+        <section className={styles.navContainer}>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='132'
+            height='15'
+            viewBox='0 0 132 15'
+            fill='none'
+            className={styles.svg}
+          >
+            {navItems.map((item) => {
+              const isActive = pathname === `/crew/${item.name}`;
+              return (
+                <Link href={item.href} key={item.id}>
+                  <circle
+                    opacity={isActive ? '' : opacity}
+                    cx={item.cx}
+                    cy='7.5'
+                    r='7.5'
+                    fill='white'
+                  />
                 </Link>
-              </li>
-            );
-          })}
-        </Nav>
-      </section> */}
-      <section>{children}</section>
+              );
+            })}
+          </svg>
+        </section>
+      </section>
     </main>
   );
 }

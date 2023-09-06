@@ -1,23 +1,46 @@
 .main {
   min-width: 90rem;
-  background: url('../../public/images/crew/background-crew-desktop.jpg') no-repeat;
+  background: url('../../public/images/crew/background-crew-desktop.jpg')lightgray 0px 0px / 100% 100% no-repeat;
   background-size: cover;
-  height: 75vh;
+  display: flex;
+  justify-content: center;
 }
 
-.destinationHeading {
+.contentNavContainer {
+  margin-top: calc(14rem - 1%);
+  border: 2px solid red;
+  position: relative;
+  /* min-height: 600px; */
+}
+
+.crewHeading {
+  position: absolute;
+  top: 0;
   color: #FFF;
   font-size: 1.75rem;
   font-weight: 400;
   letter-spacing: 0.29531rem;
-  margin-top: 14rem;
-  margin-bottom: 4rem;
   text-transform: uppercase;
+  /* border: 2px solid orange; */
 }
 
 .num {
   opacity: 0.25;
   font-weight: 700;
   margin-right: 1.5rem;
-  margin-left: 12rem;
+}
+
+/* delete and remove classname once styling is complete */
+.innerContent {
+  /* border: 2px solid lime; */
+}
+
+.navContainer {
+  /* border: 2px solid blue; */
+  position: absolute;
+  bottom: calc(2rem + 5dvh);
+}
+
+.svg {
+  /* height: 100%;   */
 }
