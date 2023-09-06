@@ -1,7 +1,7 @@
 import { getDestinations, getCrew } from '../../apiCalls.js';
 import CrewMember from '../../CrewMember/page.js';
 
-export default async function Commander() {
+export default async function MissionSpecialist() {
   const crew = await getCrew();
   console.log('crew', crew);
   const { name, images, role, bio } = crew.find(

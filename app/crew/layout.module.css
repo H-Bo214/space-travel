@@ -8,9 +8,10 @@
 
 .contentNavContainer {
   margin-top: calc(14rem - 1%);
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: relative;
-  /* min-height: 600px; */
+  width: 1100.15px;
+  height: 610px;
 }
 
 .crewHeading {

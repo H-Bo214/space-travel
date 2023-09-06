@@ -15,7 +15,7 @@ async function getDestinations() {
 
 async function getCrew() {
   const res = await fetch('http://localhost:3000/api/crew', {
-    next: { revalidate: 600 },
+    next: { revalidate: 10 },
   });
   // const res = await fetch('http://localhost:3000/api/crew',
   // {
