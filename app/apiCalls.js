@@ -22,10 +22,25 @@ async function getCrew() {
   //   cache: 'no-store',
   // });
   if (!res.ok) {
-    throw new Error('An error ocurred fetching planet destinations');
+    throw new Error('An error ocurred fetching crew details');
   }
 
   return res.json();
 }
 
-export { getDestinations, getCrew };
+async function getTechnologies() {
+  const res = await fetch('http://localhost:3000/api/technology', {
+    next: { revalidate: 10 },
+  });
+  // const res = await fetch('http://localhost:3000/api/technology',
+  // {
+  //   cache: 'no-store',
+  // });
+  if (!res.ok) {
+    throw new Error('An error ocurred fetching technology details');
+  }
+
+  return res.json();
+}
+
+export { getDestinations, getCrew, getTechnologies };
