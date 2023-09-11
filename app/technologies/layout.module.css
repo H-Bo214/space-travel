@@ -1,0 +1,49 @@
+.main {
+  min-width: 90rem;
+  background: url('../../public/images/destination/background-destination-desktop.jpg') no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+.technologyHeading {
+  color: #FFF;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.29531rem;
+  margin-top: 14rem;
+  margin-bottom: 4rem;
+}
+
+.num {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-right: 1.5rem;
+  margin-left: 12rem;
+}
+
+.NavContainer {
+  display: flex;
+  padding-left: 2.75rem;
+  margin-left: 50.78rem;
+  width: 30.78rem;
+}
+
+.navList {
+  color: #D0D6F9;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 0.1875rem solid transparent;
+  text-transform: uppercase;
+  padding-bottom: .94rem;
+}
+
+.navList:hover {
+  border-bottom: 0.1875rem solid #FFF;
+  transition: .8s ease-in-out;
+}
+
+.active {
+  border-bottom: 0.1875rem solid #FFF;
+  ;
+}
