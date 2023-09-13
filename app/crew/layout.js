@@ -30,15 +30,14 @@ export default function CrewLayout({ children }) {
         <h1 className={`${barlowCondensed.className} ${styles.crewHeading}`}>
           <span className={styles.num}>02</span> Meet Your Crew
         </h1>
-        <section className={styles.innerContent}>{children}</section>
+        <section>{children}</section>
         <section className={styles.navContainer}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='132'
-            height='15'
+            height='25'
             viewBox='0 0 132 15'
             fill='none'
-            className={styles.svg}
           >
             {navItems.map((item) => {
               const isActive = pathname === `/crew/${item.name}`;

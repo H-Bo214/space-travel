@@ -15,31 +15,33 @@ export default function DestinationLayout({ children }) {
   const pathname = usePathname();
   return (
     <main className={styles.main}>
-      <h1 className={`${barlowCondensed.className} ${styles.destinationHeading}`}>
-        <span className={styles.num}>01</span> PICK YOUR DESTINATION
-      </h1>
       <section className={styles.NavContainer}>
-        <Nav>
-          {navItems.map((item) => {
-            const isActive = pathname === `/destinations/${item.name}`;
-            return (
-              <li key={item.id}>
-                <Link
-                  href={`/destinations/${item.name}`}
-                  className={
-                    isActive
-                      ? `${styles.navList} ${styles.active}`
-                      : `${styles.navList}`
-                  }
-                >
-                  {item.name}
-                </Link>
-              </li>
-            );
-          })}
-        </Nav>
+        <h1 className={`${barlowCondensed.className} ${styles.destinationHeading}`}>
+          <span className={styles.num}>01</span> PICK YOUR DESTINATION
+        </h1>
+        <nav className={barlowCondensed.className}>
+          <ul>
+            {navItems.map((item) => {
+              const isActive = pathname === `/destinations/${item.name}`;
+              return (
+                <li key={item.id}>
+                  <Link
+                    href={`/destinations/${item.name}`}
+                    className={
+                      isActive
+                        ? `${styles.navList} ${styles.active}`
+                        : `${styles.navList}`
+                    }
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        <section>{children}</section>
       </section>
-      <section>{children}</section>
     </main>
   );
 }

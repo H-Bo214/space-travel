@@ -1,8 +1,9 @@
 .main {
-  min-width: 90rem;
-  background: url('../../public/images/destination/background-destination-desktop.jpg') no-repeat;
+  background: url('../../public/images/technology/background-technology-desktop.jpg') 100% 100% no-repeat;
   background-size: cover;
-  height: 75vh;
+  height: 100dvh;
+  min-width: 90rem;
+  width: 100%;
 }
 
 .technologyHeading {
@@ -21,29 +22,48 @@
   margin-left: 12rem;
 }
 
-.NavContainer {
+.contentNavContainer {
   display: flex;
-  padding-left: 2.75rem;
-  margin-left: 50.78rem;
-  width: 30.78rem;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.liContainer {
+  width: 4.875rem;
+  height: 4.875rem;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  list-style: none;
+  margin-bottom: 2rem;
 }
 
 .navList {
-  color: #D0D6F9;
-  display: flex;
-  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
   text-decoration: none;
-  border-bottom: 0.1875rem solid transparent;
-  text-transform: uppercase;
-  padding-bottom: .94rem;
+  list-style: none;
 }
 
 .navList:hover {
-  border-bottom: 0.1875rem solid #FFF;
   transition: .8s ease-in-out;
 }
 
+.liContainer:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.NavItemActive {
+  background-color: #fff;
+}
+
 .active {
-  border-bottom: 0.1875rem solid #FFF;
-  ;
+  color: #0B0D17;
 }

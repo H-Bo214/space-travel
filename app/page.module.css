@@ -3,22 +3,20 @@
   justify-content: center;
   margin: 0 auto;
   background: url('../public/images/home/background-home-desktop.jpg') lightgray 0px 0px / 100% 100% no-repeat;
-  /* border: 2px solid blue; */
+  background-size: cover;
   height: 100dvh;
+  min-width: 90rem;
   width: 100%;
 }
 
 .mainContentContainer {
   display: flex;
   align-items: center;
-  /* border: 2px solid darkkhaki; */
   gap: 20rem;
-  margin-top: calc(100dvh - 73dvh);
 }
 
 .leftContentContainer {
   height: 24rem;
-  /* border: 2px solid mediumspringgreen; */
 }
 
 .heading { 
@@ -55,7 +53,6 @@
   height: 24rem;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid mediumspringgreen; */
 }
 
 .exploreContainer:hover {

@@ -1,22 +1,8 @@
 .container {
-  /* border: 2px solid #FFF; */
   display: flex;
   align-items: center;
-  /* gap: 6rem; */
-}
-
-.info {
-  /* border: 2px solid salmon; */
-  /* grid-row-start: 3;
-  grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 5; */
-  /* width: 30.5rem; */
-  /* grid-column: 1;
-  grid-row: 1;
-  justify-self: center; */
-  /* flex-grow: 1;
-  flex-shrink: 1; */
+  min-height: 37.5rem;
+  min-width:31.4375rem;
 }
 
 .role {
@@ -25,7 +11,6 @@
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0.5042;
-  /* border: 2px solid skyblue; */
 }
 
 .name {
@@ -33,10 +18,8 @@
   font-size: 3.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  /* border: 2px solid limegreen; */
   min-width: 38.9rem;
   margin-top: 1rem;
-
   margin-bottom: 1.7rem;
 }
 
@@ -46,17 +29,12 @@
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 2rem;
-  /* border: 2px solid magenta; */
 }
 
 .imageContainer {
-  /* position: absolute; */
-  /* border: 2px solid blue; */
   object-fit: contain;
-  /* min-width: 38.5rem; */
 }
 
 .image {
   width: 100%;
-  /* position: absolute; */
 }
