@@ -29,41 +29,32 @@
   justify-content: center;
 }
 
-.liContainer {
+.listContainer {
+  list-style: none;
+}
+
+.navItem {
   width: 4.875rem;
   height: 4.875rem;
-  border: 1px solid lightgray;
+  border: 1px solid #5C6561;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  list-style: none;
   margin-bottom: 2rem;
-}
-
-.navList {
-  color: #FFF;
-  text-align: center;
+  color:#FFF;
   font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 0.125rem;
   text-decoration: none;
-  list-style: none;
-}
-
-.navList:hover {
-  transition: .8s ease-in-out;
-}
-
-.liContainer:hover {
-  border: 1px solid #fff;
   cursor: pointer;
 }
 
-.NavItemActive {
-  background-color: #fff;
+.navItem:hover {
+  transition: .8s ease-in-out;
+  border-color: #FFF;
 }
 
-.active {
+.navItemActive {
+  background-color: #fff;
   color: #0B0D17;
 }

@@ -6,7 +6,7 @@ import { barlowCondensed, bellefair } from '../font';
 import { usePathname } from 'next/navigation';
 
 export default function TechnologyLayout({ children }) {
-  const navItems = [
+  const navList = [
     { id: '1', href: '/technologies/vehicle', name: 'vehicle' },
     { id: '2', href: '/technologies/spaceport', name: 'spaceport' },
     { id: '3', href: '/technologies/space-capsule', name: 'space-capsule' },
@@ -19,28 +19,19 @@ export default function TechnologyLayout({ children }) {
       </h1>
       <section className={styles.contentNavContainer}>
         <nav>
-          <ul>
-            {navItems.map((item) => {
+          <ul className={styles.navItemsContainer}>
+            {navList.map((item) => {
               const isActive = pathname === `/technologies/${item.name}`;
-              const activeNavItem = isActive ? `${styles.NavItemActive}` : '';
-              const activeListItem = isActive ? `${styles.active}` : '';
+              const activeNavItem = isActive ? `${styles.navItemActive}` : '';
               return (
-                <div
-                  key={item.id}
-                  className={` ${styles.liContainer} ${isActive && activeNavItem}`}
-                >
-                  <li>
-                    <Link
-                      href={`/technologies/${item.name}`}
-                      className={`${styles.navList} ${bellefair.className} ${
-                        isActive && activeListItem
-                      }
-                        `}
-                    >
-                      {item.id}
-                    </Link>
-                  </li>
-                </div>
+                <li key={item.id}>
+                  <Link
+                    href={`/technologies/${item.name}`}
+                    className={` ${styles.navItem} ${isActive && activeNavItem}`}
+                  >
+                    {item.id}
+                  </Link>
+                </li>
               );
             })}
           </ul>
