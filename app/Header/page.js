@@ -11,7 +11,7 @@ export default function Header() {
     { id: '00', href: '/', name: 'home' },
     { id: '01', href: '/destinations/moon', name: 'destinations' },
     { id: '02', href: '/crew/commander', name: 'crew' },
-    { id: '03', href: '/technology/vehicle', name: 'technology' },
+    { id: '03', href: '/technologies/vehicle', name: 'technology' },
   ];
   const pathname = usePathname();
   return (

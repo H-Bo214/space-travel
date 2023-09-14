@@ -1,16 +1,17 @@
 .container {
   display: flex;
   align-items: center;
-  min-height: 37.5rem;
-  min-width:31.4375rem;
+  gap: 7rem;
 }
 
-.role {
-  color: #FFF;
-  font-size: 2rem;
+.heading {
+  color: #D0D6F9;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
+  letter-spacing: 0.16875rem;
   text-transform: uppercase;
-  opacity: 0.5042;
+  margin-bottom: 0.69rem;
 }
 
 .name {
@@ -18,12 +19,10 @@
   font-size: 3.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  min-width: 38.9rem;
-  margin-top: 1rem;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.06rem;
 }
 
-.bio {
+.description {
   max-width: 27.75rem;
   color: #D0D6F9;
   font-size: 1.125rem;
@@ -33,8 +32,8 @@
 
 .imageContainer {
   object-fit: contain;
+  background: #0B0D17;
 }
 
 .image {
-  /* width: 100%; */
 }

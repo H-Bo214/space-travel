@@ -1,0 +1,60 @@
+.main {
+  background: url('../../public/images/technology/background-technology-desktop.jpg') 100% 100% no-repeat;
+  background-size: cover;
+  height: 100dvh;
+  min-width: 90rem;
+  width: 100%;
+}
+
+.technologyHeading {
+  color: #FFF;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.29531rem;
+  margin-top: 14rem;
+  margin-bottom: 4rem;
+}
+
+.num {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-right: 1.5rem;
+  margin-left: 12rem;
+}
+
+.contentNavContainer {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.listContainer {
+  list-style: none;
+}
+
+.navItem {
+  width: 4.875rem;
+  height: 4.875rem;
+  border: 1px solid #5C6561;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  color:#FFF;
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  transition: .8s ease-in-out;
+  border-color: #FFF;
+}
+
+.navItemActive {
+  background-color: #fff;
+  color: #0B0D17;
+}
