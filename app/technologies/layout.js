@@ -1,5 +1,4 @@
 'use client';
-import Nav from '../Nav/page';
 import Link from 'next/link';
 import styles from './layout.module.css';
 import { barlowCondensed, bellefair } from '../font';

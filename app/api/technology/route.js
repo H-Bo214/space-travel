@@ -10,7 +10,7 @@ export async function GET(request) {
       images: {
         portrait: {
           jpg: '/images/technology/image-launch-vehicle-portrait.jpg',
-          width: 513,
+          width: 515,
           height: 527,
         },
         landscape: {
